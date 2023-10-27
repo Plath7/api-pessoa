@@ -1,4 +1,4 @@
-class Pessoa {
+export class Pessoa {
     
     //atributos da classe
     private nome: string;
@@ -84,4 +84,48 @@ class Pessoa {
     public setPeso(_peso: number){
         this.peso = _peso;
     }
+    //implementar os métodos
+    public falar():void {
+        console.log(`${this.nome} esta falando`);
+    }
+
+    public falarFrase(_frase:string):void {
+        //Logica de negócio
+        console.log(`${this.nome} fala: ${_frase}`);
+    }
+
+    public mostraPessoa(){
+        console.log(`Nome: ${this.nome}
+                    CPF: ${this.cpf}
+                    Data: ${this.data_nascimento}
+                    Telefone: ${this.telefone}
+                    Endereço: ${this.endereco}
+                    Altura: ${this.altura}
+                    Peso: ${this.peso}`);
+    }
+
+    public andar():void {
+        console.log(`${this.nome} esta andando`);
+    }
+
+    public andandoDistancia(_Quilometros:number):void {
+        setTimeout(() =>{
+            console.log(`${this.nome} anda: ${_Quilometros} Quilometros`);
+        },3000);
+        
+        
+    }
+
+
+    public comer():void {
+        console.log(`${this.nome} esta comendo`);
+    }
+
+    public comendoComida(_prato:string):void {
+        console.log(`${this.nome} esta comendo: Uma${_prato}`);
+    }
 }
+
+/**
+ *  CRUD
+ */
