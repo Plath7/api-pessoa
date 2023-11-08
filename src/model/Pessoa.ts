@@ -111,7 +111,7 @@ export class Pessoa {
     public andandoDistancia(_Quilometros:number):void {
         setTimeout(() =>{
             console.log(`${this.nome} anda: ${_Quilometros} Quilometros`);
-        },3000);
+        },3001);
         
         
     }
